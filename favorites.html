@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Favorites - Naufal</title>
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Lato', Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-image: url('background.jpg');
+      background-size: cover;
+      background-position: center;
+      background-attachment: fixed;
+      color: #ecf0f1;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+      line-height: 1.6;
+      text-align: center;
+    }
+
+    header {
+      background: linear-gradient(to right, #34495e, #2c3e50);
+      padding: 20px;
+      color: white;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 2.5em;
+      font-weight: bold;
+    }
+
+    header p {
+      margin-top: 10px;
+      font-size: 1.1em;
+      font-weight: 300;
+    }
+
+    .favorites-container {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 20px;
+      padding: 40px 20px;
+    }
+
+    .favorites-container .favorite {
+      width: 300px; /* Adjust width */
+      padding: 20px;
+      background-color: #34495e;
+      border: 2px solid #ecf0f1;
+      border-radius: 10px;
+      text-decoration: none;
+      color: #ecf0f1;
+      font-size: 1.2em;
+      font-weight: 500;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 10px;
+      box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+      transition: background-color 0.3s, transform 0.2s, box-shadow 0.3s;
+    }
+
+    .favorites-container .favorite img {
+      width: 80%; /* Adjusted width to make image smaller */
+      height: auto;
+      border-radius: 10px; /* Slightly rounded corners */
+      max-height: 220px; /* Prevent the image from becoming too large */
+    }
+
+    .favorites-container .favorite:hover {
+      background-color: #2c3e50;
+      transform: scale(1.05);
+      box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.3);
+    }
+
+    .favorite h4 {
+      margin: 5px 0;
+      font-size: 1.3em;
+    }
+
+    .favorite span {
+      font-size: 0.9em;
+      font-style: italic;
+      color: #bdc3c7;
+    }
+
+    .favorite p {
+      margin: 10px 0 0;
+    }
+
+    .back-link {
+      display: inline-block;
+      margin-top: 20px;
+      padding: 10px 20px;
+      background-color: #34495e;
+      color: white;
+      text-decoration: none;
+      border-radius: 5px;
+      font-weight: bold;
+      transition: background-color 0.3s;
+    }
+
+    .back-link:hover {
+      background-color: #2c3e50;
+      transform: scale(1.05);
+      box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.2);
+    }
+
+    footer {
+      background-color: #34495e;
+      color: white;
+      padding: 20px 0;
+      text-align: center;
+      margin-top: auto;
+    }
+
+    footer p {
+      margin: 0;
+      font-size: 0.9em;
+    }
+
+    @media screen and (max-width: 768px) {
+      header h1 {
+        font-size: 2em;
+      }
+
+      footer p {
+        font-size: 0.8em;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>My Favorite Things</h1>
+    <p>Here are some of my favorite things – feel free to explore!</p>
+  </header>
+
+  <div class="favorites-container">
+    <div class="favorite">
+      <a href="https://chapmanganato.to/manga-qi951517/chapter-1" target="_blank">
+        <img src="kingdom_book.png" alt="Kingdom Manga Cover">
+      </a>
+      <h4>Favorite Manga</h4>
+      <span>Kingdom by Yasuhisa Hara</span>
+      <p>My all-time favorite of all the manga I have read.</p>
+    </div>
+
+    <div class="favorite">
+      <a href="https://en.wikipedia.org/wiki/Brooklyn_Nine-Nine" target="_blank">
+        <img src="99_series.jpg" alt="Brooklyn 99 Poster">
+      </a>
+      <h4>Favorite Television Series</h4>
+      <span>Brooklyn 99</span>
+      <p>A television series I can watch over and over again!</p>
+    </div>
+
+    <div class="favorite">
+      <a href="https://youtu.be/WM8bTdBs-cw?si=ZJmkmxpzGWV6UF5G" target="_blank">
+        <img src="metallica_song.jpg" alt="Metallica Album Art">
+      </a>
+      <h4>Favorite Song</h4>
+      <span>One by Metallica</span>
+      <p>A song that always lifts my mood.</p>
+    </div>
+
+    <div class="favorite">
+      <a href="https://en.wikipedia.org/wiki/Pacific_Rim_(film)" target="_blank">
+        <img src="pacificrim_movie.jpg" alt="Pacific Rim Poster">
+      </a>
+      <h4>Favorite Movie</h4>
+      <span>Pacific Rim by Guillermo del Toro</span>
+      <p>An action-packed film that is my all-time favorite.</p>
+    </div>
+  </div>
+
+  <a href="file:///D:/Notepad++/imd318/imd318trialhomepage.html" class="back-link">Back to Homepage</a>
+
+  <footer>
+    <p>&copy; 2024 Naufal. All Rights Reserved.</p>
+  </footer>
+
+</body>
+</html>
